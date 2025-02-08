@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Bitgrip Presentation Styles",
+  "version": "1.0",
+  "description": "Applies Bitgrip corporate identity styles to browser based presentations",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://bitgrip.atlassian.net/wiki/*"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "appicon-256.png",
+    "32": "appicon-256.png",
+    "48": "appicon-256.png",
+    "128": "appicon-256.png",
+    "256": "appicon-256.png"
+  }
+}
