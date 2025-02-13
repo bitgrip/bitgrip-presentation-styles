@@ -13,10 +13,10 @@
     }
   ],
   "icons": {
-    "16": "res/bitgrip_icon.svg",
-    "32": "res/bitgrip_icon.svg",
-    "48": "res/bitgrip_icon.svg",
-    "128": "res/bitgrip_icon.svg",
-    "256": "res/bitgrip_icon.svg"
+    "16": "res/bitgrip_icon.png",
+    "32": "res/bitgrip_icon.png",
+    "48": "res/bitgrip_icon.png",
+    "128": "res/bitgrip_icon.png",
+    "256": "res/bitgrip_icon.png"
   }
 }
