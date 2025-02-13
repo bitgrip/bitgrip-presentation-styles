@@ -13,10 +13,10 @@
     }
   ],
   "icons": {
-    "16": "appicon-256.png",
-    "32": "appicon-256.png",
-    "48": "appicon-256.png",
-    "128": "appicon-256.png",
-    "256": "appicon-256.png"
+    "16": "res/bitgrip_icon.svg",
+    "32": "res/bitgrip_icon.svg",
+    "48": "res/bitgrip_icon.svg",
+    "128": "res/bitgrip_icon.svg",
+    "256": "res/bitgrip_icon.svg"
   }
 }
