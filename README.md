@@ -10,8 +10,6 @@ This chrome browser extension applies a custom style of the Bitgrip corporate id
 4. Select the folder containing this extension
 5. The extension should now be installed and active for Bitgrip Confluence pages
 
-## Next steps
+## Issues and Open Tasks
 
-- Add styles for light mode with a switch in the extension popup
-- Add styles for other presentation tools like Miro?
-- Publish the extension to the Chrome Web Store in private mode
+See [GitHub Issues](https://github.com/bitgrip/bitgrip-presentation-styles/issues) for open tasks and issues.
