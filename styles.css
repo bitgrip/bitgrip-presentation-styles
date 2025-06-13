@@ -1,6 +1,33 @@
+/* ---------- Color scheme variables ---------- */
+:root {
+  --ds-text: #000;
+  --ds-surface: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ds-text: #fff;
+    --ds-surface: #000;
+  }
+}
+
+/* Explicit extension override: dark */
+html.extension-dark-mode {
+  color-scheme: dark;
+  --ds-text: #fff;
+  --ds-surface: #000;
+}
+
+/* Explicit extension override: light */
+html.extension-light-mode {
+  color-scheme: light;
+  --ds-text: #000;
+  --ds-surface: #fff;
+}
+
 /* Bitgrip presentation styles for Confluence */
 
-/* Dark mode styles */
+/* Dark mode styles for Confluence's own dark mode */
 html[data-color-mode=dark][data-theme~=dark\:dark] {
   color-scheme: dark;
   --ds-text: #fff;
@@ -14,6 +41,7 @@ html[data-color-mode=dark][data-theme~=dark\:dark] {
   background-position: left 2rem top 1.3rem;
   background-size: auto;
   background-attachment: fixed;
+  background-color: var(--ds-surface);
 }
 
 /* Typography styles */
@@ -23,6 +51,7 @@ body #presenter-mode-container,
 #presenter-mode-title-text ul,
 #presenter-mode-title-text ol {
   font-family: "PP Right Grotesk Text", sans-serif !important;
+  color: var(--ds-text);
 }
 
 #presenter-mode-container h1,
@@ -32,28 +61,35 @@ body #presenter-mode-container,
 #presenter-mode-container h5,
 #presenter-mode-container h6 {
   font-family: "PPRightGrotesk-WideBold", "PPrg-wide", sans-serif !important;
+  color: var(--ds-text);
 }
 
 /* Title text styles */
 #presenter-mode-title-text h1 {
-  color: white !important;
+  color: #fff !important;
+}
+html.extension-light-mode #presenter-mode-title-text h1 {
+  color: var(--ds-text) !important;
 }
 
 /* Horizontal rule styling */
 #presenter-mode-container hr {
   margin: 10rem 0;
+  border-color: var(--ds-text);
 }
 
 /* Example styling for presentation mode */
 .confluence-presentation-mode {
-    /* Add your custom presentation styles here */
-    background-color: #ffffff;
+    background-color: var(--ds-surface);
     font-family: 'Arial', sans-serif;
+    color: var(--ds-text);
 }
 
 /* Presentation header styling */
 .presentation-header {
     padding: 20px;
+    background: var(--ds-surface);
+    color: var(--ds-text);
 }
 
 /* Presentation content styling */
@@ -61,6 +97,8 @@ body #presenter-mode-container,
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: var(--ds-surface);
+    color: var(--ds-text);
 }
 
 /* Add more specific styles as needed */
