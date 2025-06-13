@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitgrip Presentation Styles – Settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 400px;
+      margin: 2rem auto;
+      background: #fafbfc;
+      color: #222;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    fieldset {
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      padding: 1rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 0.5em 0 0.5em 1.4em;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: 0.7em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bitgrip Presentation Styles – Settings</h1>
+  <form>
+    <fieldset>
+      <legend>Color mode</legend>
+      <label>
+        <input type="radio" name="colorMode" value="system" checked>
+        System default
+      </label>
+      <label>
+        <input type="radio" name="colorMode" value="light">
+        Light mode
+      </label>
+      <label>
+        <input type="radio" name="colorMode" value="dark">
+        Dark mode
+      </label>
+    </fieldset>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>

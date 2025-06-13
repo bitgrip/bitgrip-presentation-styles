@@ -1,15 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Bitgrip Presentation Styles",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Applies Bitgrip corporate identity styles to browser based presentations",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
   "content_scripts": [
     {
       "matches": ["https://bitgrip.atlassian.net/wiki/*"],
-      "css": ["styles.css"]
+      "css": ["styles.css"],
+      "js": ["contentScript.js"]
     }
   ],
   "icons": {
